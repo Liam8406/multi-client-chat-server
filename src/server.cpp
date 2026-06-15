@@ -6,9 +6,19 @@
 #include <unistd.h>
 #include <cstring>
 
+
+
+int main(){
+    Server srv(8008);
+    srv.start();
+    
+    return 0;
+}
+
 Server::Server(int p) : port(p)
 {
 }
+
 
 void Server::start()
 {
@@ -55,7 +65,7 @@ void Server::acceptClients()
 
 void Server::handleClient(int clientSocket)
 {
-    
+
 }
 
 void Server::broadcast(const std::string &message, int senderSocket)

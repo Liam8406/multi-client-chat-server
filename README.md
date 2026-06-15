@@ -11,9 +11,11 @@ This project is being developed using Linux sockets through WSL while implementi
 Implemented:
 
 * TCP server setup
+* TCP client setup
 * IPv4 socket creation
 * Address binding
 * Listening for incoming connections
 * Client acceptance loop
 * Client address retrieval
+* Client-server connection establishment
 * Basic connection logging
